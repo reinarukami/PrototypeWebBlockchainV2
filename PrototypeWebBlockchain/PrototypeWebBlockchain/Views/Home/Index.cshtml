@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+    <img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif">
+
+    <table class="table table-dark" id="membertable">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+    </table>
+
+ 
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputEmail4">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputPassword4">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputAddress">Age</label>
+                <input type="text" class="form-control" id="age" placeholder="Age">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputAddress2">Contact Number</label>
+                <input type="text" class="form-control" id="contact" placeholder="09xx-xxx-xxxx">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="#1 X Subdivision Y Avenue Z City">
+            </div>
+        </div>
+
+
+    <center>
+        <button id="button" type="button" class="btn btn-primary">Register</button>
+        <div id="update-control">
+            <button id="button2" type="button" class="btn btn-warning">Update</button>
+            <button id="button3" type="button" class="btn btn-danger">Cancel</button>
+        </div>
+    </center>
+
+@section scripts{ 
+    <script src="~/node_modules/web3/dist/web3.min.js"></script>
+    <script src="~/Scripts/WebMainConfig.js"></script>
+    <script src="~/Scripts/indexdefault.js"></script>
+}
+
